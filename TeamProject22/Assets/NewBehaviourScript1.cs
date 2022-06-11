@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class NewBehaviourScript1 : MonoBehaviour
 {
-    public int test;
     // Start is called before the first frame update
     void Start()
     {
