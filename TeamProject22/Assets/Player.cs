@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     /// <summary>
     /// 방어 아이템 갯수
     /// </summary>
-    public int   itemOfDefence;
+    private int   itemOfDefence =3;
     /// <summary>
     /// 방어 아이템의 최대치
     /// </summary>
@@ -86,7 +86,20 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.tag == "EnemyBullet")
         
+        {
+            if (absorption == true)
+            {
+                Destroy(collision.gameObject);
+
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+
+        }
 
 
     }
