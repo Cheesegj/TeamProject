@@ -84,6 +84,14 @@ public class Player : MonoBehaviour
 
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+
+
+    }
+
+
     #endregion private
 
     #endregion      Default----------------------------------------
@@ -95,7 +103,7 @@ public class Player : MonoBehaviour
     #endregion
 
     #region private
-    
+
     /// <summary>
     /// 방어를 실행합니다
     /// </summary>
