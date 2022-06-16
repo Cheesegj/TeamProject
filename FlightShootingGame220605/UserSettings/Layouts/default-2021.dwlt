@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 17
+  controlID: 18
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 18
+  controlID: 66
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 113
+  controlID: 67
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -442,36 +442,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Anim
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 56
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Anim
   m_LastFoldersGridSize: 56
-  m_LastProjectPath: "C:\\Users\\user\\Desktop\\\uC778\uAD00\uB860\\FlightShootingGame220605"
+  m_LastProjectPath: D:\TeamProject\FlightShootingGame220605
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ac620000
-    m_LastClickedID: 25260
-    m_ExpandedIDs: 00000000886200008a6200008c6200008e620000906200009262000094620000966200009c620000b262000000ca9a3bffffff7f
+    m_SelectedIDs: c2620000
+    m_LastClickedID: 25282
+    m_ExpandedIDs: 00000000886200008a6200008c6200008e62000090620000926200009462000096620000d862000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Bullets
-      m_OriginalName: Bullets
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 25248
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 6}
     m_SearchString: 
@@ -512,7 +512,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000746900002e690000ba6900009e69000062690000966900008c6900005e690000a46900006a630000326000004e610000387d0000167a0000267a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -613,9 +613,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a81d0000
+      m_SelectedIDs: 0a630000
       m_LastClickedID: 0
-      m_ExpandedIDs: 2cfbffff725f0000
+      m_ExpandedIDs: 2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -888,7 +888,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: -0.4513855, y: 19.521488, z: 0.041211314}
     speed: 2
-    m_Value: {x: -0.18824625, y: 20.471855, z: 0.035258763}
+    m_Value: {x: -0.4513855, y: 19.521488, z: 0.041211314}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -941,7 +941,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 12.632672
     speed: 2
-    m_Value: 13.227929
+    m_Value: 12.632672
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1038,7 +1038,7 @@ MonoBehaviour:
       y: 21
       width: 433
       height: 1017
-    m_Scale: {x: 0.48111108, y: 0.48111108}
+    m_Scale: {x: 0.4811111, y: 0.48111108}
     m_Translation: {x: 216.5, y: 508.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -1046,9 +1046,9 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -450.00003
+      x: -450
       y: -1056.9285
-      width: 900.00006
+      width: 900
       height: 2113.857
     m_MinimalGUI: 1
   m_defaultScale: 0.4811111
