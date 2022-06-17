@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,80 +8,79 @@ public class PlayerBattle : MonoBehaviour
 
     #region public variable
 
-    #region ¹æ¾î¾ÆÀÌÅÛ Àç°í°ü¸®
+    #region ë°©ì–´ì•„ì´í…œ ì¬ê³ ê´€ë¦¬
 
     /// <summary>
-    /// ½ÃÀÛ½Ã ¹æ¾î ¾ÆÀÌÅÛ °¹¼ö
+    /// ì‹œì‘ì‹œ ë°©ì–´ ì•„ì´í…œ ê°¯ìˆ˜
     /// </summary>
     [SerializeField]
     private int itemOfDefence = 3;
     /// <summary>
-    /// ¹æ¾î ¾ÆÀÌÅÛÀÇ ÃÖ´ëÄ¡
+    /// ë°©ì–´ ì•„ì´í…œì˜ ìµœëŒ€ì¹˜
     /// </summary>
     [SerializeField]
     public const int itemOfDefenceMax = 3;
     /// <summary>
-    /// ¹æ¾î ¾ÆÀÌÅÛÀÇ ÀçÃæÀü ½Ã°£
+    /// ë°©ì–´ ì•„ì´í…œì˜ ì¬ì¶©ì „ ì‹œê°„
     /// </summary>
     [SerializeField] 
     public const float itemOfDefenceTimeMax = 2.5f;
     /// <summary>
-    /// ¹æ¾î ¾ÆÀÌÅÛÀÇ ÀçÃæÀü ½Ã°£ÃøÁ¤
+    /// ë°©ì–´ ì•„ì´í…œì˜ ì¬ì¶©ì „ ì‹œê°„ì¸¡ì •
     /// </summary>
     [SerializeField] 
     public float itemOfDefenceTime = 0f;
 
     /// <summary>
-    /// ¹æ¾î¾ÆÀÌÅÛÀÇ ui¿ÀºêÁ§Æ®
+    /// ë°©ì–´ì•„ì´í…œì˜ uiì˜¤ë¸Œì íŠ¸
     /// </summary>
     public GameObject[] objectOfDefence;
 
     #endregion
 
-    #region ¹æ¾î¾ÆÀÌÅÛÀÇ ½ÃÀÛ°ú ³¡ Àç»ç¿ë½Ã°£
+    #region ë°©ì–´ì•„ì´í…œì˜ ì‹œì‘ê³¼ ë ì¬ì‚¬ìš©ì‹œê°„
     /// <summary>
-    /// ¹æ¾î¾ÆÀÌÅÛÀÇ ÄğÅ¸ÀÓ
+    /// ë°©ì–´ì•„ì´í…œì˜ ì¿¨íƒ€ì„
     /// </summary>
     [SerializeField] 
     public const float coolTimeOfDefence = 1.0f;
     /// <summary>
-    /// ¹æ¾î ¾ÆÀÌÅÛÀÇ Èí¼ö½Ã°£
+    /// ë°©ì–´ ì•„ì´í…œì˜ í¡ìˆ˜ì‹œê°„
     /// </summary>
     [SerializeField] 
     public const float timeOfAbsorption = 0.6f;
     /// <summary>
-    /// ¹æ¾î¾ÆÀÌÅÛÀÇ ½Ã°£ÃøÁ¤
+    /// ë°©ì–´ì•„ì´í…œì˜ ì‹œê°„ì¸¡ì •
     /// </summary>
     [SerializeField] 
     public float timeOfDefence = 0f;
 
     /// <summary>
-    /// Èí¼öÀÇ »óÅÂ À¯¹«
+    /// í¡ìˆ˜ì˜ ìƒíƒœ ìœ ë¬´
     /// </summary>
     [SerializeField] 
     public bool absorption = false;
 
     /// <summary>
-    /// ¹æ¾î¾ÆÀÌÅÛÀÌ ÄğÅ¸ÀÓÀÎÁö º¾´Ï´Ù
+    /// ë°©ì–´ì•„ì´í…œì´ ì¿¨íƒ€ì„ì¸ì§€ ë´…ë‹ˆë‹¤
     /// </summary>
     public bool coolTimeBool = false;
 
     #endregion
 
-
-    #region ¸®½ºÆù °ü·Ãµé
+    #region ë¦¬ìŠ¤í° ê´€ë ¨ë“¤
     /// <summary>
-    /// ÀÌµ¿À¯¹«
+    /// ì´ë™ìœ ë¬´
     /// </summary>
     public bool moveAble = true;
 
     /// <summary>
-    /// ¾Æ·¡ÃøÀÇ º®
+    /// ì•„ë˜ì¸¡ì˜ ë²½
     /// </summary>
     public GameObject bottomWall;
 
     /// <summary>
-    /// Àç½ºÆùÁß
+    /// ì¬ìŠ¤í°ì¤‘
     /// </summary>
     public bool reSpawn;
 
@@ -89,7 +88,9 @@ public class PlayerBattle : MonoBehaviour
 
     #endregion
 
-    #region °ø°İÈí¼ö °ü·Ãµé
+    #region ê³µê²©í¡ìˆ˜ ê´€ë ¨ë“¤
+
+
 
     #endregion
 
@@ -131,7 +132,7 @@ public class PlayerBattle : MonoBehaviour
         ReSpawning();
     }
 
-    // Ãæµ¹½Ã½ºÅÛ °¡Á®¿Â°Í
+    // ì¶©ëŒì‹œìŠ¤í…œ ê°€ì ¸ì˜¨ê²ƒ
     /*
     private void OnCollisionEnter2D2(Collision2D collision)
     {
@@ -167,7 +168,7 @@ public class PlayerBattle : MonoBehaviour
     #region private
 
     /// <summary>
-    /// ¹æ¾î¸¦ ½ÇÇàÇÕ´Ï´Ù
+    /// ë°©ì–´ë¥¼ ì‹¤í–‰í•©ë‹ˆë‹¤
     /// </summary>
     public void defence()
     {
@@ -197,7 +198,7 @@ public class PlayerBattle : MonoBehaviour
     }
 
     /// <summary>
-    /// ¹æ¾îÀÇ Áö¼Ó½Ã°£µ¿¾È ÀÏÀ» ÇÕ´Ï´Ù
+    /// ë°©ì–´ì˜ ì§€ì†ì‹œê°„ë™ì•ˆ ì¼ì„ í•©ë‹ˆë‹¤
     /// </summary>
     public void defenceTime()
     {
@@ -255,7 +256,7 @@ public class PlayerBattle : MonoBehaviour
     }
 
     /// <summary>
-    /// ¹æ¾î¾ÆÀÌÅÛÀ» ÃæÀüÇÕ´Ï´Ù
+    /// ë°©ì–´ì•„ì´í…œì„ ì¶©ì „í•©ë‹ˆë‹¤
     /// </summary>
     public void defenceRecharge()
     {
