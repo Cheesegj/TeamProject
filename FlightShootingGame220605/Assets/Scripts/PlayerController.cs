@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class PlayerController : MonoBehaviour
 {
+    public PlayerBattle PB;
+
     public static int damage = 4;
     [Range(1, 8)]
     public float planeSpeed = 1;
@@ -35,7 +37,12 @@ public class PlayerController : MonoBehaviour
     private bool isFireable = true;
     private float rechargeCoolTime;
     private int life;
-    
+
+    private void Awake()
+    {
+        PB = gameObject.GetComponent<PlayerBattle>();
+    }
+
     void Start()
     {
         playerAnimController = GetComponent<Animator>();
@@ -44,6 +51,8 @@ public class PlayerController : MonoBehaviour
         Life = GameManager.Inst.lifeStorage.transform.childCount;
     }
 
+    // 원본 Update
+    /*
     void Update()
     {
         xVal = Input.GetAxisRaw("Horizontal");
@@ -83,12 +92,66 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+    */
 
+    #region 원본업데이트의 수정본들
+    private void Update()
+    {
+        UpdateNomal();
+        PB.Update2();
+    }
+
+    /// <summary>
+    /// 기존의 업데이트에 존재하던 이동관련 코드들
+    /// </summary>
+    private void UpdateNomal()
+    {
+        xVal = Input.GetAxisRaw("Horizontal");
+        yVal = Input.GetAxisRaw("Vertical");
+
+        if (Mathf.Abs(xVal) < 0.1f)
+        {
+            playerAnimController.Play("pCenter");
+        }
+        else if (xVal > 0)
+        {
+            playerAnimController.Play("pRight");
+        }
+        else if (xVal < 0)
+        {
+            playerAnimController.Play("pLeft");
+        }
+
+        if (!isFireable)
+        {
+            rechargeCoolTime -= Time.deltaTime;
+            if (rechargeCoolTime < 0)
+            {
+                isFireable = true;
+                rechargeCoolTime = fireRate;
+            }
+        }
+
+        if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.J))
+        {
+            if (isFireable && PB.moveAble)
+            {
+                GameObject clone = Instantiate(bullet, transform.position, Quaternion.identity);
+                clone.GetComponent<Bullet>().Speed = 18.5f;
+                Destroy(clone, 3.5f);
+                isFireable = false;
+            }
+        }
+    }
+
+    #endregion
     private void GameEnd()
     {
         GameManager.Inst.OnGameFail();
     }
 
+    // 원본 온트리거엔터
+    /*
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag.Equals("EnemyBullet"))
@@ -107,11 +170,74 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+    */
+
+    #region 수정된 온트리거엔터
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag.Equals("EnemyBullet"))
+        {
+            if (PB.absorption == true)
+            {
+                Destroy(other.gameObject);
+
+                PB.absorptionEnergy += 25;
+                if(PB.absorptionEnergy >= 100)
+                {
+                    PB.powerOfAttack++;
+                    PB.absorptionEnergy =0;
+                }
+
+            }else if(PB.moveAble == false)
+            {
+
+            }
+            else if (Life > 0)
+            {
+                // 기존의 라이프 감소 시스템
+                /*
+                Life -= 1;
+                GameObject targetLife = GameManager.Inst.lifeStorage.transform.GetChild(0).gameObject;
+                Destroy(targetLife);
+                Destroy(other.gameObject);
+                */
+
+                // 재생성되는 라이프 시스템
+                Life -= 1;
+                GameObject targetLife = GameManager.Inst.lifeStorage.transform.GetChild(0).gameObject;
+                Destroy(targetLife);
+                Destroy(other.gameObject);
+
+                // 리스폰도중엔 움직이지 못합니다
+                PB.moveAble = false;
+                PB.reSpawn = true;
+
+                // 격추될경우 아래쪽으로 이동시킵니다
+                gameObject.transform.position = new Vector3(0,-10,0);
+            }
+
+        }
+        else if (other.tag.Equals("Coin"))
+        {
+            GameManager.Inst.score += 200;
+            Destroy(other.gameObject);
+        }
+    }
+    #endregion
 
     private void FixedUpdate()
     {
-        playerRigidbody.velocity = (Vector3.right * xVal + Vector3.up * yVal) * planeSpeed;
+        // 이동가능한 상태일때만 불로 이동가능하게함
+        if(PB.moveAble == true)
+        {
+            playerRigidbody.velocity = (Vector3.right * xVal + Vector3.up * yVal) * planeSpeed;
+        }
+
     }
+
+
+
+
 }
 
 [System.Serializable]
