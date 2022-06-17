@@ -181,6 +181,13 @@ public class PlayerController : MonoBehaviour
             {
                 Destroy(other.gameObject);
 
+                PB.absorptionEnergy += 25;
+                if(PB.absorptionEnergy >= 100)
+                {
+                    PB.powerOfAttack++;
+                    PB.absorptionEnergy =0;
+                }
+
             }else if(PB.moveAble == false)
             {
 

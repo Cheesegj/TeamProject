@@ -90,7 +90,17 @@ public class PlayerBattle : MonoBehaviour
 
     #region 공격흡수 관련들
 
+    public float absorptionEnergy;
 
+
+    #endregion
+
+    #region 공격력 레벨 관련들
+
+    public int powerOfAttack;
+
+    [SerializeField]
+    public const int powerOfAttackMax = 3;
 
     #endregion
 
@@ -114,7 +124,9 @@ public class PlayerBattle : MonoBehaviour
 
     private void Awake()
     {
-        reSpawn = false;
+        powerOfAttack = 0;
+        absorptionEnergy = 0;
+           reSpawn = false;
         absorption = false;
         coolTimeBool = false;
         moveAble = true;
@@ -277,6 +289,9 @@ public class PlayerBattle : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// 재소환될때 행하는 것들 관련입니다
+    /// </summary>
     public void ReSpawning()
     {
         if (reSpawn == true)
