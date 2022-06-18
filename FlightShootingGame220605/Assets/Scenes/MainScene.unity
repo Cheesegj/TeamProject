@@ -3455,6 +3455,8 @@ MonoBehaviour:
   bottomWall: {fileID: 591287474}
   reSpawn: 0
   GetRigidbody2: {fileID: 0}
+  absorptionEnergy: 0
+  powerOfAttack: 0
 --- !u!1 &1540774429
 GameObject:
   m_ObjectHideFlags: 0

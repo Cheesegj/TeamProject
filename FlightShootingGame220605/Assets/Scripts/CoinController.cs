@@ -6,6 +6,8 @@ public class CoinController : MonoBehaviour
 {
     private Rigidbody2D coinRigidbody2D;
     
+    
+
     void Start()
     {
         coinRigidbody2D = GetComponent<Rigidbody2D>();
