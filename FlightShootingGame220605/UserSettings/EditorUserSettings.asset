@@ -35,6 +35,7 @@ EditorUserSettings:
 =======
       value: 0252020550530a5f55565b75457a06444f4e1b2f7d2c24337e2a4837b6b43161
       flags: 0
+<<<<<<< HEAD:0617/UserSettings/EditorUserSettings.asset
     RecentlyUsedSceneGuid-6:
       value: 06520c5e5c07590c0b0a087614775b44444e4d2b2d2924602c2d196ae4b33160
 >>>>>>> parent of 8575f68c (이름변경및 수정):0617/UserSettings/EditorUserSettings.asset
@@ -45,6 +46,10 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-6:
       value: 0252020550530a5f55565b75457a06444f4e1b2f7d2c24337e2a4837b6b43161
+=======
+    vcSharedLogLevel:
+      value: 0d5e400f0650
+>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/EditorUserSettings.asset
       flags: 0
   m_VCAutomaticAdd: 1
   m_VCDebugCom: 0

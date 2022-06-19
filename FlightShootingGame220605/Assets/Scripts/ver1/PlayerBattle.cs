@@ -237,9 +237,13 @@ public class PlayerBattle : MonoBehaviour
         if (absorption == true)
         {
             gameObject.GetComponent<SpriteRenderer>().color = new Color(255 / 255f, 255 / 255f, 255 / 255f, 125 / 255f);
+<<<<<<< HEAD:0617/Assets/Scripts/ver1/PlayerBattle.cs
 
             gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1.2f, 2f);
 
+=======
+            gameObject.GetComponent<BoxCollider2D>().size = new Vector2(0.9f, 1.5f);
+>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/Assets/Scripts/ver1/PlayerBattle.cs
         }
         else
         {

@@ -19,7 +19,11 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
+<<<<<<< HEAD
   m_Title: Game
+=======
+  m_Title: Hierarchy
+>>>>>>> parent of 49ae594a (0618)
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -39,13 +43,39 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 904
     y: 0
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+    x: 904
+    y: 0
+<<<<<<< HEAD:FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
     width: 627
     height: 573
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
+<<<<<<< HEAD
+=======
+=======
+    width: 368
+    height: 561
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
+>>>>>>> parent of 8575f68c (이름변경및 수정):0617/UserSettings/Layouts/default-2021.dwlt
+========
+    x: 284
+    y: 0
+    width: 774
+    height: 536
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 18}
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
   m_Panes:
   - {fileID: 18}
   m_Selected: 0
@@ -74,7 +104,27 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 85
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+<<<<<<< HEAD:FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+<<<<<<< HEAD
+<<<<<<< HEAD
+  controlID: 72
+=======
+  controlID: 136
+>>>>>>> parent of 686c3dde (왜 일어나는지 모르겠는 변경들)
+=======
+  controlID: 19
+>>>>>>> parent of 6d50646f (벨류값이 바뀌는 이유가 뭘까)
+=======
+  controlID: 97
+>>>>>>> parent of 8575f68c (이름변경및 수정):0617/UserSettings/Layouts/default-2021.dwlt
+========
+  controlID: 128
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -90,13 +140,36 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
     x: 1531
     y: 0
     width: 389
     height: 947
+<<<<<<< HEAD
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
+=======
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+<<<<<<< HEAD:FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+  m_ActualView: {fileID: 15}
+=======
+  m_ActualView: {fileID: 14}
+>>>>>>> parent of 8575f68c (이름변경및 수정):0617/UserSettings/Layouts/default-2021.dwlt
+========
+    x: 1476
+    y: 0
+    width: 444
+    height: 947
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
   m_Panes:
   - {fileID: 15}
   m_Selected: 0
@@ -118,8 +191,18 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 379
     height: 573
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+    width: 379
+    height: 573
+========
+    width: 284
+    height: 536
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
@@ -137,12 +220,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
   m_Name: ConsoleWindow
+=======
+  m_Name: ProjectBrowser
+>>>>>>> parent of 49ae594a (0618)
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 573
     width: 1531
     height: 374
@@ -154,6 +242,25 @@ MonoBehaviour:
   - {fileID: 19}
   m_Selected: 1
   m_LastSelected: 0
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+    y: 573
+    width: 1531
+    height: 374
+========
+    y: 536
+    width: 1476
+    height: 411
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 14}
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 1
+>>>>>>> parent of 49ae594a (0618)
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,12 +351,40 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1531
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+    width: 1531
+========
+    width: 1476
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
     height: 947
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 86
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+<<<<<<< HEAD:FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+<<<<<<< HEAD
+<<<<<<< HEAD
+  controlID: 73
+=======
+  controlID: 106
+>>>>>>> parent of 686c3dde (왜 일어나는지 모르겠는 변경들)
+=======
+  controlID: 20
+>>>>>>> parent of 6d50646f (벨류값이 바뀌는 이유가 뭘까)
+=======
+  controlID: 17
+>>>>>>> parent of 8575f68c (이름변경및 수정):0617/UserSettings/Layouts/default-2021.dwlt
+========
+  controlID: 129
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -270,12 +405,40 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
     width: 1531
     height: 573
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
+<<<<<<< HEAD
   controlID: 62
+=======
+<<<<<<< HEAD:FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+<<<<<<< HEAD
+<<<<<<< HEAD
+  controlID: 74
+=======
+  controlID: 107
+>>>>>>> parent of 686c3dde (왜 일어나는지 모르겠는 변경들)
+=======
+  controlID: 21
+>>>>>>> parent of 6d50646f (벨류값이 바뀌는 이유가 뭘까)
+=======
+  controlID: 133
+>>>>>>> parent of 8575f68c (이름변경및 수정):0617/UserSettings/Layouts/default-2021.dwlt
+========
+    width: 1476
+    height: 536
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 8096}
+  vertical: 0
+  controlID: 130
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -291,10 +454,23 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
     x: 379
     y: 0
     width: 525
     height: 573
+<<<<<<< HEAD
+=======
+========
+    x: 1058
+    y: 0
+    width: 418
+    height: 536
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
@@ -302,7 +478,11 @@ MonoBehaviour:
   - {fileID: 17}
   - {fileID: 13}
   m_Selected: 0
+<<<<<<< HEAD
   m_LastSelected: 0
+=======
+  m_LastSelected: 1
+>>>>>>> parent of 49ae594a (0618)
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -311,6 +491,107 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animator
+    m_Image: {fileID: -1673928668082335149, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 844
+    y: 73
+    width: 630
+    height: 606
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: 7719799301310425868, guid: 0a221882ee147fb4cb4f81840a981c84, type: 2}
+    - {fileID: -2649746635652630814, guid: ecf48a11babbebc43873a95111ed2d99, type: 2}
+    - {fileID: 7842636420252584109, guid: 36cf29fd957197e4e9c583027fb78892, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 0.65569323
+      e01: 0
+      e02: 0
+      e03: 88.36871
+      e10: 0
+      e11: 0.65569323
+      e12: 0
+      e13: 163.22202
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: 0a221882ee147fb4cb4f81840a981c84, type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 7719799301310425868, guid: 0a221882ee147fb4cb4f81840a981c84, type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentEditor: 0
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+>>>>>>> parent of 49ae594a (0618)
   m_EditorHideFlags: 1
   m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -352,9 +633,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 646
     width: 1530
     height: 353
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+    y: 646
+    width: 1530
+    height: 353
+========
+    y: 609
+    width: 1475
+    height: 390
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -372,6 +665,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets
     m_Globs: []
     m_OriginalText: 
@@ -380,14 +674,75 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scenes
   m_LastFoldersGridSize: -1
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+<<<<<<< HEAD:FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+    - Assets/Tools/Vertical 2D Shooting BE4
+=======
+    - Assets/Scripts
+>>>>>>> parent of 8575f68c (이름변경및 수정):0617/UserSettings/Layouts/default-2021.dwlt
+========
+    - Assets/Scripts/ver1
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+    m_Globs: []
+    m_OriginalText: 
+  m_ViewMode: 1
+  m_StartGridSize: 56
+  m_LastFolders:
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+<<<<<<< HEAD:FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+  - Assets/Tools/Vertical 2D Shooting BE4
+=======
+  - Assets/Scripts
+>>>>>>> parent of 8575f68c (이름변경및 수정):0617/UserSettings/Layouts/default-2021.dwlt
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: C:\Users\Cheesegj\Desktop\0617
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+<<<<<<< HEAD:FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+    scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_SelectedIDs: 3e9b0000
+    m_LastClickedID: 39742
+    m_ExpandedIDs: 000000001e9b0000469b000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 52630000
+    m_LastClickedID: 25426
+    m_ExpandedIDs: 00000000de620000f462000000ca9a3bffffff7f
+>>>>>>> parent of 686c3dde (왜 일어나는지 모르겠는 변경들)
+=======
+    m_SelectedIDs: 80610000
+    m_LastClickedID: 24960
+    m_ExpandedIDs: 00000000126100005061000000ca9a3bffffff7f
+>>>>>>> parent of 6d50646f (벨류값이 바뀌는 이유가 뭘까)
+=======
+    scrollPos: {x: 0, y: 55}
+    m_SelectedIDs: b4620000
+    m_LastClickedID: 25268
+    m_ExpandedIDs: 00000000a6620000ba62000000ca9a3bffffff7f
+>>>>>>> parent of 8575f68c (이름변경및 수정):0617/UserSettings/Layouts/default-2021.dwlt
+========
+  - Assets/Scripts/ver1
+  m_LastFoldersGridSize: 56
+>>>>>>> parent of 49ae594a (0618)
   m_LastProjectPath: D:\TeamProject\FlightShootingGame220605
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 30610000
     m_LastClickedID: 24880
     m_ExpandedIDs: 00000000fe6000003c61000000ca9a3bffffff7f
+=======
+    scrollPos: {x: 0, y: 7}
+    m_SelectedIDs: 46630000
+    m_LastClickedID: 25414
+    m_ExpandedIDs: 00000000886200008a6200008c6200008e62000090620000926200009462000096620000ac620000b262000000ca9a3bffffff7f
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -415,7 +770,27 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000fe600000
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+<<<<<<< HEAD:FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_ExpandedIDs: 000000001e9b0000
+=======
+    m_ExpandedIDs: 00000000de620000
+>>>>>>> parent of 686c3dde (왜 일어나는지 모르겠는 변경들)
+=======
+    m_ExpandedIDs: 0000000012610000
+>>>>>>> parent of 6d50646f (벨류값이 바뀌는 이유가 뭘까)
+=======
+    m_ExpandedIDs: 00000000a6620000
+>>>>>>> parent of 8575f68c (이름변경및 수정):0617/UserSettings/Layouts/default-2021.dwlt
+========
+    m_ExpandedIDs: 00000000886200008a6200008c6200008e62000090620000926200009462000096620000
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -440,10 +815,22 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 70610000
     m_LastClickedInstanceID: 24944
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000
+========
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000746900002e690000ba6900009e69000062690000966900008c6900005e690000a46900006a630000326000004e610000387d0000167a0000267a0000
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -459,7 +846,11 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 0}
+=======
+      m_ClientGUIView: {fileID: 6}
+>>>>>>> parent of 49ae594a (0618)
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -468,9 +859,19 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
+<<<<<<< HEAD
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 115
+=======
+    m_GridSize: 56
+  m_SkipHiddenPackages: 0
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+  m_DirectoriesAreaWidth: 115
+========
+  m_DirectoriesAreaWidth: 206
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -491,9 +892,21 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1531
     y: 73
     width: 388
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+    x: 1531
+    y: 73
+    width: 388
+========
+    x: 1476
+    y: 73
+    width: 443
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -502,7 +915,11 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
+<<<<<<< HEAD
     m_CachedPref: 160
+=======
+    m_CachedPref: 228
+>>>>>>> parent of 49ae594a (0618)
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
@@ -534,8 +951,18 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
+<<<<<<< HEAD
     width: 378
     height: 552
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+    width: 378
+    height: 552
+========
+    width: 283
+    height: 515
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -543,9 +970,37 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 8ef6ffffc8f7ffffd8f8ffff80faffff
+=======
+<<<<<<< HEAD:FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+<<<<<<< HEAD
+<<<<<<< HEAD
+      m_SelectedIDs: 889b0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 12e2ffff38e3ffff
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 22f8ffff6ef8ffffb2f9ffff2cfbffff
+>>>>>>> parent of 686c3dde (왜 일어나는지 모르겠는 변경들)
+=======
+      m_SelectedIDs: 90610000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 70faffff
+>>>>>>> parent of 6d50646f (벨류값이 바뀌는 이유가 뭘까)
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+      m_ExpandedIDs: d47cffff2cfbffff
+>>>>>>> parent of 8575f68c (이름변경및 수정):0617/UserSettings/Layouts/default-2021.dwlt
+========
+      m_ExpandedIDs: 2cfbffff
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -561,14 +1016,30 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
+<<<<<<< HEAD
         m_ClientGUIView: {fileID: 4}
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+        m_ClientGUIView: {fileID: 4}
+========
+        m_ClientGUIView: {fileID: 5}
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
+<<<<<<< HEAD
   m_WindowGUID: c5c34fc8a01c3da4ebd0c85c862fa68c
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+  m_WindowGUID: c5c34fc8a01c3da4ebd0c85c862fa68c
+========
+  m_WindowGUID: 4c969a2b90040154d917609493e03593
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -589,10 +1060,23 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
     x: 379
     y: 73
     width: 523
     height: 552
+<<<<<<< HEAD
+=======
+========
+    x: 1058
+    y: 73
+    width: 416
+    height: 515
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -641,6 +1125,31 @@ MonoBehaviour:
       id: unity-search-toolbar
       index: 1
       layout: 1
+<<<<<<< HEAD
+=======
+    - dockPosition: 1
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Open Tile Palette
+      index: 2
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Tilemap Focus
+      index: 3
+      layout: 4
+>>>>>>> parent of 49ae594a (0618)
     - dockPosition: 0
       containerId: overlay-container--left
       floating: 0
@@ -794,9 +1303,29 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -0.124928765, y: 0.44692832, z: -0.009202534}
     speed: 2
     m_Value: {x: -0.124928765, y: 0.44692832, z: -0.009202534}
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+    m_Target: {x: 0, y: 0, z: 0}
+    speed: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_Value: {x: -0.124928765, y: 0.44692832, z: -0.009202534}
+=======
+    m_Value: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 686c3dde (왜 일어나는지 모르겠는 변경들)
+=======
+    m_Value: {x: -0.061089836, y: 0.21854676, z: -0.004500015}
+>>>>>>> parent of 6d50646f (벨류값이 바뀌는 이유가 뭘까)
+========
+    m_Target: {x: 0.46990988, y: -4.2075005, z: 0.15088208}
+    speed: 2
+    m_Value: {x: 0.46990988, y: -4.2075005, z: 0.15088208}
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -847,9 +1376,29 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 10.92025
     speed: 2
     m_Value: 10.92025
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+    m_Target: 10
+    speed: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_Value: 10.92025
+=======
+    m_Value: 10
+>>>>>>> parent of 686c3dde (왜 일어나는지 모르겠는 변경들)
+=======
+    m_Value: 10.45
+>>>>>>> parent of 6d50646f (벨류값이 바뀌는 이유가 뭘까)
+========
+    m_Target: 1.8154985
+    speed: 2
+    m_Value: 1.8154985
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -894,10 +1443,23 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
     x: 904
     y: 73
     width: 625
     height: 552
+<<<<<<< HEAD
+=======
+========
+    x: 284
+    y: 73
+    width: 772
+    height: 515
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -944,16 +1506,33 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
       width: 625
       height: 531
     m_Scale: {x: 0.331875, y: 0.331875}
     m_Translation: {x: 312.5, y: 265.5}
+<<<<<<< HEAD
+=======
+========
+      width: 772
+      height: 494
+    m_Scale: {x: 0.30875, y: 0.30875}
+    m_Translation: {x: 386, y: 247}
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
       x: -941.61957
       y: -800
       width: 1883.2391
@@ -961,6 +1540,18 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 0.331875
   m_LastWindowPixelSize: {x: 625, y: 552}
+<<<<<<< HEAD
+=======
+========
+      x: -1250.2024
+      y: -800
+      width: 2500.4048
+      height: 1600
+    m_MinimalGUI: 1
+  m_defaultScale: 0.30875
+  m_LastWindowPixelSize: {x: 772, y: 515}
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -987,9 +1578,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 646
     width: 1530
     height: 353
+=======
+<<<<<<<< HEAD:0617/UserSettings/Layouts/default-2021.dwlt
+    y: 646
+    width: 1530
+    height: 353
+========
+    y: 700
+    width: 1475
+    height: 299
+>>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> parent of 49ae594a (0618)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default

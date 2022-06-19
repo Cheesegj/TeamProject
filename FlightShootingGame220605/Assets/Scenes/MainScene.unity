@@ -3848,7 +3848,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094b6d4e458e64d44a09a03e93fa7652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD:0617/Assets/Scenes/MainScene.unity
   SD: {fileID: 116405044}
+=======
+>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/Assets/Scenes/MainScene.unity
   itemOfDefence: 3
   itemOfDefenceTime: 0
   objectOfDefence:
@@ -3862,6 +3865,7 @@ MonoBehaviour:
   bottomWall: {fileID: 591287474}
   reSpawn: 0
   GetRigidbody2: {fileID: 0}
+<<<<<<< HEAD:0617/Assets/Scenes/MainScene.unity
   absorptionEnergy: 0
   powerOfAttack: 0
   powerUi:
@@ -3869,6 +3873,8 @@ MonoBehaviour:
   - {fileID: 331534778}
   - {fileID: 305755815}
   powerBar: {fileID: 174050090}
+=======
+>>>>>>> parent of 49ae594a (0618):FlightShootingGame220605/Assets/Scenes/MainScene.unity
 --- !u!1 &1540774429
 GameObject:
   m_ObjectHideFlags: 0
