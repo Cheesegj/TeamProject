@@ -266,6 +266,7 @@ public class PlayerController : MonoBehaviour
         {
             GameManager.Inst.score += 200;
             Destroy(other.gameObject);
+            PB.SD.SFXPlay(0);
         }
     }
     #endregion
