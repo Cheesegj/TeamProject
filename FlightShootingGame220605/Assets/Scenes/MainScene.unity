@@ -429,11 +429,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 215cc31d90c83624b814f7c78c818061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SD: {fileID: 0}
+  SD: {fileID: 116405044}
   backgroundLength: 14.54
   backgrounds:
   - m_image: {fileID: 7161010895319585528, guid: 86c6fe8f8d098fe4994cd2fabe330a4b, type: 3}
     speed: 2
+  bgms: 2
 --- !u!1 &116405042
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,7 +483,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfx: {fileID: 116405046}
   bgm: {fileID: 116405045}
-  stageBgm: []
+  stageBgm:
+  - {fileID: 8300000, guid: fb06e9cb0dfe77e49ac42af2a110ee35, type: 3}
+  - {fileID: 8300000, guid: 2c6ba1bd354c78e44b53396a8643427d, type: 3}
+  - {fileID: 8300000, guid: 0dca432afdd4e7647a4f3a0667dd277d, type: 3}
   effects:
   - {fileID: 8300000, guid: 4235b7d20d4574a409554ef29367585f, type: 3}
   - {fileID: 8300000, guid: 7853e9e91e4bf89488c6699dc6cea767, type: 3}
@@ -499,7 +503,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.463
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -595,7 +599,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.126
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -982,13 +986,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 215cc31d90c83624b814f7c78c818061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SD: {fileID: 0}
+  SD: {fileID: 116405044}
   backgroundLength: 16
   backgrounds:
   - m_image: {fileID: 7427454846991753326, guid: 39add71451aab074c8ecbcb09748aa58, type: 3}
     speed: 2
   - m_image: {fileID: 679866163901744735, guid: eed3b90d88f77ef42bcac7c1e0ead739, type: 3}
     speed: 1
+  bgms: 1
 --- !u!1 &305755815
 GameObject:
   m_ObjectHideFlags: 0
@@ -4221,7 +4226,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1569628234
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4789,7 +4794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 215cc31d90c83624b814f7c78c818061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SD: {fileID: 0}
+  SD: {fileID: 116405044}
   backgroundLength: 12
   backgrounds:
   - m_image: {fileID: 1963113450576122696, guid: 5291c59edee15b24fad2dc918896e3f9, type: 3}
@@ -4798,6 +4803,7 @@ MonoBehaviour:
     speed: 5
   - m_image: {fileID: 6002801985377697831, guid: dbf0125c732e96e4487b152bc07e0abb, type: 3}
     speed: 3
+  bgms: 0
 --- !u!1 &1903876136
 GameObject:
   m_ObjectHideFlags: 0

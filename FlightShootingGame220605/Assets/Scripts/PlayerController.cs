@@ -217,14 +217,15 @@ public class PlayerController : MonoBehaviour
             {
                 Destroy(other.gameObject);
 
-                if(PB.powerOfAttack != 3)
+                if(PB.powerOfAttack != 2)
                 {
                     PB.absorptionEnergy += 25;
                     if (PB.absorptionEnergy >= 100)
                     {
                         PB.powerOfAttack++;
                         PB.absorptionEnergy = 0;
-                        PB.powerUi[PB.powerOfAttack - 1].SetActive(true);
+                        PB.powerUi[PB.powerOfAttack].SetActive(true);
+                        PB.SD.SFXPlay(0);
                     }
 
                     PB.powerBar.offsetMax = new Vector2(-(100-PB.absorptionEnergy), 10);
