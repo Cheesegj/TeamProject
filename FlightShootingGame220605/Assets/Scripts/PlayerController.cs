@@ -136,6 +136,8 @@ public class PlayerController : MonoBehaviour
         {
             if (isFireable && PB.moveAble)
             {
+                PB.SD.SFXPlay(2);
+
                 if(PB.powerOfAttack == 0)
                 {
                     GameObject clone = Instantiate(bullet, transform.position, Quaternion.identity);

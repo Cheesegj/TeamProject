@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnvironmentSetting : MonoBehaviour
 {
+    public SoundManager SD;
     public static int poolCount = 3;
     public float backgroundLength;
     public Background[] backgrounds;
