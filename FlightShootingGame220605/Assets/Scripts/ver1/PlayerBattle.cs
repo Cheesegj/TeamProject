@@ -97,10 +97,16 @@ public class PlayerBattle : MonoBehaviour
 
     #region 공격력 레벨 관련들
 
+    /// <summary>
+    /// 공격력 레벨
+    /// </summary>
     public int powerOfAttack;
 
     [SerializeField]
     public const int powerOfAttackMax = 3;
+
+    public GameObject[] powerUi;
+    public RectTransform powerBar;
 
     #endregion
 
@@ -230,7 +236,7 @@ public class PlayerBattle : MonoBehaviour
         if (absorption == true)
         {
             gameObject.GetComponent<SpriteRenderer>().color = new Color(255 / 255f, 255 / 255f, 255 / 255f, 125 / 255f);
-            gameObject.GetComponent<BoxCollider2D>().size = new Vector2(0.9f, 1.5f);
+            gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1.2f, 2f);
         }
         else
         {
