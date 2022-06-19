@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class EnvironmentSetting : MonoBehaviour
 {
+    public SoundManager SD;
     public static int poolCount = 3;
     public float backgroundLength;
     public Background[] backgrounds;
 
     private GameObject[,] bgPrefabs;
-
+    public int bgms;
     void Start()
     {
         bgPrefabs = new GameObject[backgrounds.Length, poolCount];
+        SD.BGMPlay(bgms);
         for (int i = 0; i < backgrounds.Length; i++)
         {
             for (int j = 0; j < poolCount; j++)
@@ -35,6 +37,7 @@ public class EnvironmentSetting : MonoBehaviour
                     bgPrefabs[i, j].transform.position = Vector3.up * (bgPrefabs[i, backgrounds[i].Current].transform.position.y + backgroundLength);
                     backgrounds[i].Current++;
                 }
+                
                 bgPrefabs[i, j].transform.position -= Vector3.up * backgrounds[i].speed * Time.deltaTime;
             }
         }
