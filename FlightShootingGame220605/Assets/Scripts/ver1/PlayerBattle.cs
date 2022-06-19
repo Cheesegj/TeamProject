@@ -237,7 +237,9 @@ public class PlayerBattle : MonoBehaviour
         if (absorption == true)
         {
             gameObject.GetComponent<SpriteRenderer>().color = new Color(255 / 255f, 255 / 255f, 255 / 255f, 125 / 255f);
+
             gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1.2f, 2f);
+
         }
         else
         {

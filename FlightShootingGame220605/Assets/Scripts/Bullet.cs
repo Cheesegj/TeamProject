@@ -9,5 +9,8 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         transform.position += transform.up * Speed * Time.deltaTime;
+
+        if (transform.position.y < -5.5)
+            Destroy(gameObject);
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3464754578545692347}
   - component: {fileID: 3464754578545692344}
   - component: {fileID: -7831124214822588768}
-  - component: {fileID: 5750617534941415363}
+  - component: {fileID: 4504486812055796141}
   - component: {fileID: -1871292169668961292}
   m_Layer: 0
   m_Name: Enemy B
@@ -101,15 +101,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 45
   speed: 2.4
+  moveCount: 0
+  movePattern: 0
+  attackDelay: 0
+  attackPattern: 0
   bulletFireRate: 0.08
   bulletAtOnce: 3
   fireCoolTime: 2
   onDamagedSprite: {fileID: -7844560889915226194, guid: 138040323294fd440a3a823e5d70ad01, type: 3}
   firePattern: 0
   bulletPrefab: {fileID: 5549420677843290261, guid: 0def831eacbda9c45b0a191ce90236e7, type: 3}
-  targetLoop: 1
---- !u!61 &5750617534941415363
-BoxCollider2D:
+--- !u!60 &4504486812055796141
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -131,9 +134,14 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.5, y: 0.5}
+      - {x: -0.5, y: 0.25}
+      - {x: -0.041666668, y: -0.5}
+      - {x: 0.041666668, y: -0.5}
+      - {x: 0.5, y: 0.25}
+      - {x: 0.5, y: 0.5}
 --- !u!50 &-1871292169668961292
 Rigidbody2D:
   serializedVersion: 4

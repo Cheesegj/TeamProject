@@ -5,14 +5,17 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour, IDestroyable
 {
     public int hp;
-    public float speed = 1f;
+    public float speed;
+    public int moveCount;
+    public int movePattern;
+    public float attackDelay;
+    public int attackPattern;
     public float bulletFireRate;
     public int bulletAtOnce = 5;
-    public float fireCoolTime;
+    //public float fireCoolTime;
     public Sprite onDamagedSprite;
-    public EnemyBulletPattern firePattern;
+    public int firePattern;
     public GameObject bulletPrefab;
-    public int targetLoop = 0;
 
     private Vector3 transitionTarget;
     private SpriteRenderer spriteRenderer;
@@ -34,7 +37,6 @@ public class EnemyController : MonoBehaviour, IDestroyable
         if (hp <= 0)
         {
             Demolish();
-            GameManager.enemyCount -= 1;
         }
     }
 
@@ -43,13 +45,13 @@ public class EnemyController : MonoBehaviour, IDestroyable
         spriteRenderer = GetComponent<SpriteRenderer>();
         idleImage = spriteRenderer.sprite;
         StartCoroutine(Fire());
-
-        StartCoroutine(TransitionDirector(targetLoop));
     }
 
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, transitionTarget, speed * Time.deltaTime);
+        TransitionDirector();
+        if (transform.position.y < -5.5)
+            Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -66,7 +68,7 @@ public class EnemyController : MonoBehaviour, IDestroyable
         while (true)
         {
             int i = 0;
-            yield return new WaitForSeconds(fireCoolTime);
+            yield return new WaitForSeconds(attackDelay);
             while (i < bulletAtOnce)
             {
                 i++;
@@ -78,48 +80,85 @@ public class EnemyController : MonoBehaviour, IDestroyable
 
     private void BulletFire()
     {
+        
         switch (firePattern)
         {
-            case EnemyBulletPattern.Direct:
+            case 0:
                 GameObject bulletClone = Instantiate(bulletPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, 180)));
+                //bulletClone.transform.LookAt(-bulletClone.transform.up);
                 break;
-            case EnemyBulletPattern.Spiral:
-                for (int i = 0; i < 5; i++)
-                {
-                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, 150 + 15 * i +360)));
-                }
+            case 1:
+                GameObject bulletClone1 = Instantiate(bulletPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, 150)));
+                GameObject bulletClone2 = Instantiate(bulletPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, 180)));
+                GameObject bulletClone3 = Instantiate(bulletPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, 210)));
                 break;
-            case EnemyBulletPattern.Cruise:
+            case 2:
                 break;
         }
     }
 
     IEnumerator OnDamaged()
     {
-        if (onDamagedSprite == null)
-            yield break;
-
-        if (TryGetComponent<Animator>(out Animator animController))
-            animController.enabled = false;
-
         spriteRenderer.sprite = onDamagedSprite;
         yield return new WaitForSeconds(0.1f);
         spriteRenderer.sprite = idleImage;
-
-        if (animController != null)
-            animController.enabled = true;
     }
 
-    IEnumerator TransitionDirector(int targetLoop = 0)
+
+    private void TransitionDirector()
     {
-        int i = 0;
-        while (true)
+        switch (movePattern)
         {
-            transitionTarget = GameManager.Inst.loops[targetLoop].positions[i].position;
-            yield return new WaitForSeconds(3.5f);
-            i++;
-            if (i >= GameManager.Inst.loops[targetLoop].positions.Length)
-                i = 0;
+            case 0:
+                transform.position += new Vector3(0.0f, -speed * Time.deltaTime, 0.0f);
+                break;
+
+            case 1:
+                transitionTarget = GameManager.Inst.loop1[moveCount];
+                if (transform.position == GameManager.Inst.loop1[moveCount])
+                    moveCount++;
+                if (moveCount >= GameManager.Inst.loop1.Count)
+                    moveCount = 0;
+                transform.position = Vector2.MoveTowards(transform.position, transitionTarget, speed * Time.deltaTime);
+                break;
+
+            case 2:
+                transitionTarget = GameManager.Inst.loop2[moveCount];
+                if (transform.position == GameManager.Inst.loop2[moveCount])
+                    moveCount++;
+                if (moveCount >= GameManager.Inst.loop2.Count)
+                    moveCount = 0;
+                transform.position = Vector2.MoveTowards(transform.position, transitionTarget, speed * Time.deltaTime);
+                break;
+
+            case 3:
+
+                break;
+        }
+
+
+    }
+
+    public void SetParameter(int _hp, float _speed, int _movePattern, float _attackDelay, int _attackPattern)
+    {
+        hp = _hp;
+        speed = _speed;
+        movePattern = _movePattern;
+        attackDelay = _attackDelay;
+        attackPattern = _attackPattern;
+        switch(attackPattern)
+        {
+            case 0:
+                bulletAtOnce = 1;
+                bulletFireRate = 0.0f;
+                firePattern = 0;
+                break;
+            case 1:
+                bulletAtOnce = 3;
+                bulletFireRate = 0.5f;
+                firePattern = 1;
+                break;
+
         }
     }
 }

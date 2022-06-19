@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public PlayerBattle PB;
 
-    public static int damage = 4;
+    public static int damage = 1;
     [Range(1, 8)]
     public float planeSpeed = 1;
     public int Life
