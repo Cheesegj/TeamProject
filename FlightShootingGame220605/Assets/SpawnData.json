@@ -447,6 +447,7 @@
             "movePatten": 0,
             "attackDelay": 1.5,
             "attackPatten": 1
+<<<<<<< Updated upstream:FlightShootingGame220605/Assets/SpawnData.json
         }
     ]
 } "movePatten": 0,
@@ -466,6 +467,8 @@
             "movePatten": 0,
             "attackDelay": 1.5,
             "attackPatten": 1
+=======
+>>>>>>> Stashed changes:0617/Assets/SpawnData.json
         }
     ]
 }
