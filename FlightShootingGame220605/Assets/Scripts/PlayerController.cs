@@ -136,10 +136,44 @@ public class PlayerController : MonoBehaviour
         {
             if (isFireable && PB.moveAble)
             {
-                GameObject clone = Instantiate(bullet, transform.position, Quaternion.identity);
-                clone.GetComponent<Bullet>().Speed = 18.5f;
-                Destroy(clone, 3.5f);
-                isFireable = false;
+                if(PB.powerOfAttack == 0)
+                {
+                    GameObject clone = Instantiate(bullet, transform.position, Quaternion.identity);
+                    clone.GetComponent<Bullet>().Speed = 18.5f;
+                    Destroy(clone, 3.5f);
+                    isFireable = false;
+                }
+                else if(PB.powerOfAttack == 1)
+                {
+                    Vector3 vector1 = new Vector3(transform.position.x + 0.15f, transform.position.y, transform.position.z);
+                    Vector3 vector2 = new Vector3(transform.position.x - 0.15f, transform.position.y, transform.position.z);
+                    GameObject clone1 = Instantiate(bullet, vector1, Quaternion.identity);
+                    GameObject clone2 = Instantiate(bullet, vector2, Quaternion.identity);
+
+                    clone1.GetComponent<Bullet>().Speed = 18.5f;
+                    clone2.GetComponent<Bullet>().Speed = 18.5f;
+                    Destroy(clone1, 3.5f);
+                    Destroy(clone2, 3.5f);
+                    isFireable = false;
+                }
+                else
+                {
+                    Vector3 vector1 = new Vector3(transform.position.x + 0.2f, transform.position.y, transform.position.z);
+                    Vector3 vector2 = new Vector3(transform.position.x - 0.2f, transform.position.y, transform.position.z);
+                    Vector3 vector3 = new Vector3(transform.position.x , transform.position.y+0.2f, transform.position.z);
+                    GameObject clone1 = Instantiate(bullet, vector1, Quaternion.identity);
+                    GameObject clone2 = Instantiate(bullet, vector2, Quaternion.identity);
+                    GameObject clone3 = Instantiate(bullet, vector3, Quaternion.identity);
+
+                    clone1.GetComponent<Bullet>().Speed = 18.5f;
+                    clone2.GetComponent<Bullet>().Speed = 18.5f;
+                    clone3.GetComponent<Bullet>().Speed = 18.5f;
+                    Destroy(clone1, 3.5f);
+                    Destroy(clone2, 3.5f);
+                    Destroy(clone3, 3.5f);
+                    isFireable = false;
+                }
+
             }
         }
     }
@@ -181,12 +215,20 @@ public class PlayerController : MonoBehaviour
             {
                 Destroy(other.gameObject);
 
-                PB.absorptionEnergy += 25;
-                if(PB.absorptionEnergy >= 100)
+                if(PB.powerOfAttack != 3)
                 {
-                    PB.powerOfAttack++;
-                    PB.absorptionEnergy =0;
+                    PB.absorptionEnergy += 25;
+                    if (PB.absorptionEnergy >= 100)
+                    {
+                        PB.powerOfAttack++;
+                        PB.absorptionEnergy = 0;
+                        PB.powerUi[PB.powerOfAttack - 1].SetActive(true);
+                    }
+
+                    PB.powerBar.offsetMax = new Vector2(-(100-PB.absorptionEnergy), 10);
                 }
+
+
 
             }else if(PB.moveAble == false)
             {
