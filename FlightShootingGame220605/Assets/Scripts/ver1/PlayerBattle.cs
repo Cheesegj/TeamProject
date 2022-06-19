@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerBattle : MonoBehaviour
 {
+    public SoundManager SD;
     #region Battle
 
     #region public variable
