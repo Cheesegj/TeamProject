@@ -233,7 +233,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-            }else if(PB.moveAble == false)
+            }else if(PB.moveAble == false || PB.noDeathTime != 0)
             {
 
             }
@@ -259,6 +259,7 @@ public class PlayerController : MonoBehaviour
 
                 // 격추될경우 아래쪽으로 이동시킵니다
                 gameObject.transform.position = new Vector3(0,-10,0);
+                PB.noDeathTime = 0.1f;
             }
 
         }

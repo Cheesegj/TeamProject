@@ -87,6 +87,12 @@ public class PlayerBattle : MonoBehaviour
 
     public Rigidbody2D GetRigidbody2;
 
+    public bool noDeath;
+
+    public float noDeathTime;
+
+    public const float noDeathTimeMax = 3f;
+
     #endregion
 
     #region 공격흡수 관련들
@@ -131,6 +137,7 @@ public class PlayerBattle : MonoBehaviour
 
     private void Awake()
     {
+        noDeathTime = 0;
         powerOfAttack = 0;
         absorptionEnergy = 0;
            reSpawn = false;
@@ -149,6 +156,15 @@ public class PlayerBattle : MonoBehaviour
         defenceTime();
 
         ReSpawning();
+
+        if (noDeathTime != 0)
+        {
+            noDeathTime += Time.deltaTime;
+            if(noDeathTime > noDeathTimeMax)
+            {
+                noDeathTime = 0;
+            }
+        }
     }
 
     // 충돌시스템 가져온것
@@ -234,7 +250,7 @@ public class PlayerBattle : MonoBehaviour
             bottomWall.SetActive(true);
         }
 
-        if (absorption == true)
+        if (absorption == true || noDeathTime != 0)
         {
             gameObject.GetComponent<SpriteRenderer>().color = new Color(255 / 255f, 255 / 255f, 255 / 255f, 125 / 255f);
             gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1.2f, 2f);
@@ -304,14 +320,14 @@ public class PlayerBattle : MonoBehaviour
         if (reSpawn == true)
         {
             GetRigidbody2.velocity = (Vector3.right * 0f + Vector3.up * 1.0f) * 6.0f;
-
+            
         }
 
         if(gameObject.transform.position.y > -3)
         {
             reSpawn = false;
             moveAble = true;
-
+            
         }
 
     }
