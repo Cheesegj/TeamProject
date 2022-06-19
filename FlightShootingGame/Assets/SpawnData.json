@@ -1,0 +1,452 @@
+{
+    "spawnDataList": [
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": -2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 1.0,
+            "hp": 2,
+            "speed": 0.800000011920929,
+            "movePatten": 0,
+            "attackDelay": 2.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": -0.5,
+                "y": 4.0
+            },
+            "spawnDelay": 1.0,
+            "hp": 2,
+            "speed": 0.800000011920929,
+            "movePatten": 0,
+            "attackDelay": 2.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": 1.5,
+                "y": 4.0
+            },
+            "spawnDelay": 1.0,
+            "hp": 2,
+            "speed": 0.800000011920929,
+            "movePatten": 0,
+            "attackDelay": 2.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": -1.5,
+                "y": 4.0
+            },
+            "spawnDelay": 1.0,
+            "hp": 2,
+            "speed": 0.800000011920929,
+            "movePatten": 0,
+            "attackDelay": 2.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": 0.5,
+                "y": 4.0
+            },
+            "spawnDelay": 1.0,
+            "hp": 2,
+            "speed": 0.800000011920929,
+            "movePatten": 0,
+            "attackDelay": 2.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": 2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 1.0,
+            "hp": 2,
+            "speed": 0.800000011920929,
+            "movePatten": 0,
+            "attackDelay": 2.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": -2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 1.0,
+            "hp": 2,
+            "speed": 0.800000011920929,
+            "movePatten": 0,
+            "attackDelay": 2.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": -0.5,
+                "y": 4.0
+            },
+            "spawnDelay": 1.0,
+            "hp": 2,
+            "speed": 0.800000011920929,
+            "movePatten": 0,
+            "attackDelay": 2.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": 1.5,
+                "y": 4.0
+            },
+            "spawnDelay": 1.0,
+            "hp": 2,
+            "speed": 0.800000011920929,
+            "movePatten": 0,
+            "attackDelay": 2.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": -1.5,
+                "y": 4.0
+            },
+            "spawnDelay": 1.0,
+            "hp": 2,
+            "speed": 0.800000011920929,
+            "movePatten": 0,
+            "attackDelay": 2.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": 0.5,
+                "y": 4.0
+            },
+            "spawnDelay": 1.0,
+            "hp": 2,
+            "speed": 0.800000011920929,
+            "movePatten": 0,
+            "attackDelay": 2.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": 2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 1.0,
+            "hp": 2,
+            "speed": 0.800000011920929,
+            "movePatten": 0,
+            "attackDelay": 2.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": -2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 2.0,
+            "hp": 2,
+            "speed": 1.0,
+            "movePatten": 1,
+            "attackDelay": 3.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": -2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 2.0,
+            "hp": 2,
+            "speed": 1.0,
+            "movePatten": 1,
+            "attackDelay": 3.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": -2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 2.0,
+            "hp": 2,
+            "speed": 1.0,
+            "movePatten": 1,
+            "attackDelay": 3.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": -2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 2.0,
+            "hp": 2,
+            "speed": 1.0,
+            "movePatten": 1,
+            "attackDelay": 3.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": -2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 2.0,
+            "hp": 2,
+            "speed": 1.0,
+            "movePatten": 1,
+            "attackDelay": 3.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": -2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 2.0,
+            "hp": 2,
+            "speed": 1.0,
+            "movePatten": 1,
+            "attackDelay": 3.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": -2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 2.0,
+            "hp": 2,
+            "speed": 1.0,
+            "movePatten": 1,
+            "attackDelay": 3.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": -2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 2.0,
+            "hp": 2,
+            "speed": 1.0,
+            "movePatten": 1,
+            "attackDelay": 3.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": -2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 2.0,
+            "hp": 2,
+            "speed": 1.0,
+            "movePatten": 1,
+            "attackDelay": 3.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 0,
+            "type": 0,
+            "spawnPosition": {
+                "x": -2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 2.0,
+            "hp": 2,
+            "speed": 1.0,
+            "movePatten": 1,
+            "attackDelay": 3.0,
+            "attackPatten": 0
+        },
+        {
+            "stage": 1,
+            "type": 1,
+            "spawnPosition": {
+                "x": -2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 0.0,
+            "hp": 5,
+            "speed": 1.0,
+            "movePatten": 0,
+            "attackDelay": 1.5,
+            "attackPatten": 1
+        },
+        {
+            "stage": 1,
+            "type": 1,
+            "spawnPosition": {
+                "x": -1.0,
+                "y": 4.0
+            },
+            "spawnDelay": 5.0,
+            "hp": 5,
+            "speed": 1.0,
+            "movePatten": 0,
+            "attackDelay": 1.5,
+            "attackPatten": 1
+        },
+        {
+            "stage": 1,
+            "type": 1,
+            "spawnPosition": {
+                "x": 2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 0.0,
+            "hp": 5,
+            "speed": 1.0,
+            "movePatten": 0,
+            "attackDelay": 1.5,
+            "attackPatten": 1
+        },
+        {
+            "stage": 1,
+            "type": 1,
+            "spawnPosition": {
+                "x": 1.0,
+                "y": 4.0
+            },
+            "spawnDelay": 5.0,
+            "hp": 5,
+            "speed": 1.0,
+            "movePatten": 0,
+            "attackDelay": 1.5,
+            "attackPatten": 1
+        },
+        {
+            "stage": 1,
+            "type": 1,
+            "spawnPosition": {
+                "x": -2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 0.0,
+            "hp": 5,
+            "speed": 1.0,
+            "movePatten": 0,
+            "attackDelay": 1.5,
+            "attackPatten": 1
+        },
+        {
+            "stage": 1,
+            "type": 1,
+            "spawnPosition": {
+                "x": -1.0,
+                "y": 4.0
+            },
+            "spawnDelay": 5.0,
+            "hp": 5,
+            "speed": 1.0,
+            "movePatten": 0,
+            "attackDelay": 1.5,
+            "attackPatten": 1
+        },
+        {
+            "stage": 1,
+            "type": 1,
+            "spawnPosition": {
+                "x": 2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 0.0,
+            "hp": 5,
+            "speed": 1.0,
+            "movePatten": 0,
+            "attackDelay": 1.5,
+            "attackPatten": 1
+        },
+        {
+            "stage": 1,
+            "type": 1,
+            "spawnPosition": {
+                "x": 1.0,
+                "y": 4.0
+            },
+            "spawnDelay": 5.0,
+            "hp": 5,
+            "speed": 1.0,
+            "movePatten": 0,
+            "attackDelay": 1.5,
+            "attackPatten": 1
+        },
+        {
+            "stage": 1,
+            "type": 1,
+            "spawnPosition": {
+                "x": -2.5,
+                "y": 4.0
+            },
+            "spawnDelay": 0.0,
+            "hp": 5,
+            "speed": 1.0,
+            "movePatten": 0,
+            "attackDelay": 1.5,
+            "attackPatten": 1
+        },
+        {
+            "stage": 1,
+            "type": 1,
+            "spawnPosition": {
+                "x": -1.0,
+                "y": 4.0
+            },
+            "spawnDelay": 5.0,
+            "hp": 5,
+            "speed": 1.0,
+            "movePatten": 0,
+            "attackDelay": 1.5,
+            "attackPatten": 1
+        }
+    ]
+}
