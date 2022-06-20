@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         SetLoop();
-        SaveData();
+
         ReadSpawnData();
 
         StartCoroutine(StageController());
@@ -177,69 +177,7 @@ public class GameManager : MonoBehaviour
         loop2.Add(new Vector3(2.5f, -6.0f));
     }
 
-    private void SaveData()
-    {
-        //json 데이터 저장용이고 나중에 비활성화
-        //type, spawnPosition, spawnDelay, hp, speed, movePatten, attackDelay, attackPatten
 
-        //SpawnRes spawnSetSave = new SpawnRes();
-
-        spawnSetSave.spawnDataList.Add(new SpawnData(0, 0, new Vector3(-2.5f, 4.0f), 1.0f, 2, 0.8f, 0, 2.0f, 0));
-        spawnSetSave.spawnDataList.Add(new SpawnData(0, 0, new Vector3(-0.5f, 4.0f), 1.0f, 2, 0.8f, 0, 2.0f, 0));
-        spawnSetSave.spawnDataList.Add(new SpawnData(0, 0, new Vector3(1.5f, 4.0f), 1.0f, 2, 0.8f, 0, 2.0f, 0));
-        spawnSetSave.spawnDataList.Add(new SpawnData(0, 0, new Vector3(-1.5f, 4.0f), 1.0f, 2, 0.8f, 0, 2.0f, 0));
-        spawnSetSave.spawnDataList.Add(new SpawnData(0, 0, new Vector3(0.5f, 4.0f), 1.0f, 2, 0.8f, 0, 2.0f, 0));
-        spawnSetSave.spawnDataList.Add(new SpawnData(0, 0, new Vector3(2.5f, 4.0f), 1.0f, 2, 0.8f, 0, 2.0f, 0));
-        spawnSetSave.spawnDataList.Add(new SpawnData(0, 0, new Vector3(-2.5f, 4.0f), 1.0f, 2, 0.8f, 0, 2.0f, 0));
-        spawnSetSave.spawnDataList.Add(new SpawnData(0, 0, new Vector3(-0.5f, 4.0f), 1.0f, 2, 0.8f, 0, 2.0f, 0));
-        spawnSetSave.spawnDataList.Add(new SpawnData(0, 0, new Vector3(1.5f, 4.0f), 1.0f, 2, 0.8f, 0, 2.0f, 0));
-        spawnSetSave.spawnDataList.Add(new SpawnData(0, 0, new Vector3(-1.5f, 4.0f), 1.0f, 2, 0.8f, 0, 2.0f, 0));
-        spawnSetSave.spawnDataList.Add(new SpawnData(0, 0, new Vector3(0.5f, 4.0f), 1.0f, 2, 0.8f, 0, 2.0f, 0));
-        spawnSetSave.spawnDataList.Add(new SpawnData(0, 0, new Vector3(2.5f, 4.0f), 1.0f, 2, 0.8f, 0, 2.0f, 0));
-
-        for (int i = 0; i < 10; i++)
-        {
-            spawnSetSave.spawnDataList.Add(new SpawnData(0, 0, new Vector3(-2.5f, 4.0f), 2.0f, 2, 1.0f, 1, 3.0f, 0));
-        }
-        spawnSetSave.spawnDataList[spawnSetSave.spawnDataList.Count - 1].spawnDelay = 2.0f;
-
-        for (int i = 0; i < 2; i++)
-        {
-            spawnSetSave.spawnDataList.Add(new SpawnData(1, 1, new Vector3(-2.5f + (1.5f * i), 4.0f), 0.0f, 5, 1.0f, 0, 1.5f, 1));
-        }
-        spawnSetSave.spawnDataList[spawnSetSave.spawnDataList.Count - 1].spawnDelay = 5.0f;
-        for (int i = 0; i < 2; i++)
-        {
-            spawnSetSave.spawnDataList.Add(new SpawnData(1, 1, new Vector3(2.5f - (1.5f * i), 4.0f), 0.0f, 5, 1.0f, 0, 1.5f, 1));
-        }
-        spawnSetSave.spawnDataList[spawnSetSave.spawnDataList.Count - 1].spawnDelay = 5.0f;
-        for (int i = 0; i < 2; i++)
-        {
-            spawnSetSave.spawnDataList.Add(new SpawnData(1, 1, new Vector3(-2.5f + (1.5f * i), 4.0f), 0.0f, 5, 1.0f, 0, 1.5f, 1));
-        }
-        spawnSetSave.spawnDataList[spawnSetSave.spawnDataList.Count - 1].spawnDelay = 5.0f;
-        for (int i = 0; i < 2; i++)
-        {
-            spawnSetSave.spawnDataList.Add(new SpawnData(1, 1, new Vector3(2.5f - (1.5f * i), 4.0f), 0.0f, 5, 1.0f, 0, 1.5f, 1));
-        }
-        spawnSetSave.spawnDataList[spawnSetSave.spawnDataList.Count - 1].spawnDelay = 5.0f;
-        for (int i = 0; i < 2; i++)
-        {
-            spawnSetSave.spawnDataList.Add(new SpawnData(1, 1, new Vector3(-2.5f + (1.5f * i), 4.0f), 0.0f, 5, 1.0f, 0, 1.5f, 1));
-        }
-        spawnSetSave.spawnDataList[spawnSetSave.spawnDataList.Count - 1].spawnDelay = 5.0f;
-
-        //spawnSetSave.Print();
-
-        string jsonData = JsonUtility.ToJson(spawnSetSave, true);
-        Debug.Log(jsonData);
-        FileStream stream = new FileStream(Application.dataPath + "/SpawnData.json", FileMode.OpenOrCreate);
-        byte[] data = Encoding.UTF8.GetBytes(jsonData);
-        stream.Write(data, 0, data.Length);
-        stream.Close();
-
-
-    }
 }
 
 public enum EnemyBulletPattern
